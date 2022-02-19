@@ -12,7 +12,6 @@ trap finish TSTP
 trap finish CONT
 
 ./build.sh
-sudo ./startNginx.sh
 
 ./startAllBots.sh &
 pids[${countMain}]=$!
@@ -21,6 +20,8 @@ pids[${countMain}]=$!
 ./startSvelte.sh &
 pids[${countMain}]=$!
 ((countMain++))
+
+sudo ./startNginx.sh
 
 for pid in ${pids[*]}; do
   wait "$pid"

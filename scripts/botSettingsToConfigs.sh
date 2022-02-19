@@ -6,6 +6,12 @@ function generateNGINXConfig {
           }"
 }
 
+function generateNGINXContractList {
+  echo "location /contractList {
+                return 200 \"$1\";
+          }"
+}
+
 DIRENV=../bot/env
 DIRCONFIGS=../nginx/configs
 
@@ -15,8 +21,11 @@ rm -fr $DIRCONFIGS
 mkdir $DIRENV
 mkdir $DIRCONFIGS
 
+CONTRACTLIST=""
+
 for s in $(cat ../bots.json | jq -c '.[]'); do
   CONTRACTADDRESS=$(echo $s | jq -cr '.tradingActorContractAddress')
+  CONTRACTLIST="$CONTRACTADDRESS,$CONTRACTLIST"
   HTTPPort=$(echo $s | jq -cr '.HTTPPort')
 
   echo $(generateNGINXConfig "$CONTRACTADDRESS" "$HTTPPort") >>$DIRCONFIGS/"$CONTRACTADDRESS.conf"
@@ -24,3 +33,5 @@ for s in $(cat ../bots.json | jq -c '.[]'); do
     echo $z >>$DIRENV/"$CONTRACTADDRESS"
   done
 done
+
+echo $(generateNGINXContractList "$CONTRACTLIST") >>$DIRCONFIGS/contractList.conf
