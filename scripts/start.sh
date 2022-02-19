@@ -17,11 +17,9 @@ trap finish CONT
 pids[${countMain}]=$!
 ((countMain++))
 
-./startSvelte.sh &
-pids[${countMain}]=$!
-((countMain++))
+./startSvelte.sh
 
-sudo ./startNginx.sh
+./startNginx.sh
 
 for pid in ${pids[*]}; do
   wait "$pid"

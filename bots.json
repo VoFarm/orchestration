@@ -5,9 +5,11 @@
     "tradingActorUrl": "wss://rinkeby.infura.io/ws/v3/",
     "tradingActorNetID": 4,
     "tradingActorContractAddress": "",
+    "ERC20TokenAddressPrimary": "",
+    "ERC20TokenAddressSecondary": "",
     "pairPricerUrl": "wss://mainnet.infura.io/ws/v3/",
     "pairPricerNetID": "1",
-    "sleepSeconds": 120,
+    "sleepSeconds": 1080,
     "defaultPriority": 1.15,
     "HTTPPort": 3005
   },
@@ -17,9 +19,11 @@
     "tradingActorUrl": "wss://rinkeby.infura.io/ws/v3/",
     "tradingActorNetID": 4,
     "tradingActorContractAddress": "",
+    "ERC20TokenAddressPrimary": "",
+    "ERC20TokenAddressSecondary": "",
     "pairPricerUrl": "wss://mainnet.infura.io/ws/v3/",
     "pairPricerNetID": "1",
-    "sleepSeconds": 120,
+    "sleepSeconds": 360,
     "defaultPriority": 1.15,
     "HTTPPort": 3006
   }
