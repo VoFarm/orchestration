@@ -4,7 +4,7 @@
 
 **Requirements**
 
-- snel
+- npm
 - nginx
 - jq
 - wget
