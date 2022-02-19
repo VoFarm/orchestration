@@ -1,4 +1,4 @@
-# 🦕 Interface and Orchestration for the Trading-Actor
+# 🦕 Orchestration for the Trading-Actor
 
 ## Run
 

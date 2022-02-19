@@ -7,7 +7,9 @@ trap finish EXIT
 trap finish TSTP
 trap finish CONT
 
-cd ../ui
+cd ../
+git clone https://github.com/VoFarm/trading-actor-interface.git
+cd trading-actor-interface
 snel serve &
 pids[0]=$!
 
