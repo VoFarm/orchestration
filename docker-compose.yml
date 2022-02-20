@@ -7,3 +7,4 @@ services:
       - "3025:80"
     volumes:
       - ./bots.json:/usr/share/orchestration/bots.json
+      - ./storage:/usr/share/orchestration/scripts/storage
