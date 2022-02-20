@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  trading-actor:
+    build: ./
+    container_name: trading-actor
+    ports:
+      - "3025:3025"
+    volumes:
+      - ./bots.json:/usr/share/orchestration/bots.json
+      - ./storage:/usr/share/orchestration/scripts/storage
