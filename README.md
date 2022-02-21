@@ -17,4 +17,5 @@
 4. nginx should run on port 3025 and expose the interface
 
 ### Docker
-1. Run `docker-compose up`
+1. Adjust `bots.json`
+2. Run `docker-compose up`
