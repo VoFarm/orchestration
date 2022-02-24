@@ -19,6 +19,7 @@ for file in ../bot/env/*; do
   done" &
   pids[${count}]=$!
   ((count++))
+  sleep 15
 done
 
 for pid in ${pids[*]}; do
