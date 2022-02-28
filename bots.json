@@ -11,7 +11,7 @@
     "pairPricerNetID": "1",
     "sleepSeconds": 1080,
     "defaultPriority": 1.15,
-    "host": "localhost",
+    "url": "localhost",
     "HTTPPort": 3005
   },
   {
