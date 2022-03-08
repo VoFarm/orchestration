@@ -3,3 +3,4 @@ dist
 nginx/configs
 bot
 scripts/storage
+bots.json
