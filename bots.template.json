@@ -1,30 +1,30 @@
 [
-{
-publicAddress: "",
-privateKey: "",
-tradingActorUrl: "wss://rinkeby.infura.io/ws/v3/",
-tradingActorNetID: 4,
-tradingActorExplorer: "https://rinkeby.etherscan.io/",
-tradingActorContractAddress: "",
-pairPricerUrl: "wss://mainnet.infura.io/ws/v3/",
-pairPricerNetID: "1",
-sleepSeconds: 1080,
-defaultPriority: 1.15,
-url: "localhost",
-HTTPPort: 3005
-},
-{
-publicAddress: "",
-privateKey: "",
-tradingActorUrl: "wss://rinkeby.infura.io/ws/v3/",
-tradingActorNetID: 4,
-tradingActorExplorer: "https://rinkeby.etherscan.io/",
-tradingActorContractAddress: "",
-pairPricerUrl: "wss://mainnet.infura.io/ws/v3/",
-pairPricerNetID: "1",
-sleepSeconds: 360,
-defaultPriority: 1.15,
-url: "localhost",
-HTTPPort: 3006
-}
+    {
+        "publicAddress": "",
+        "privateKey": "",
+        "tradingActorUrl": "wss://rinkeby.infura.io/ws/v3/",
+        "tradingActorNetID": 4,
+        "tradingActorExplorer": "https://rinkeby.etherscan.io/",
+        "tradingActorContractAddress": "",
+        "pairPricerUrl": "wss://mainnet.infura.io/ws/v3/",
+        "pairPricerNetID": "1",
+        "sleepSeconds": 1080,
+        "defaultPriority": 1.15,
+        "url": "localhost",
+        "HTTPPort": 3005
+    },
+    {
+        "publicAddress": "",
+        "privateKey": "",
+        "tradingActorUrl": "wss://rinkeby.infura.io/ws/v3/",
+        "tradingActorNetID": 4,
+        "tradingActorExplorer": "https://rinkeby.etherscan.io/",
+        "tradingActorContractAddress": "",
+        "pairPricerUrl": "wss://mainnet.infura.io/ws/v3/",
+        "pairPricerNetID": "1",
+        "sleepSeconds": 360,
+        "defaultPriority": 1.15,
+        "url": "localhost",
+        "HTTPPort": 3006
+    }
 ]
